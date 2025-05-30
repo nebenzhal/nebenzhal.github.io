@@ -20,24 +20,78 @@
         .book-list {
             padding: 0;
         }
-        .book-list p {
+        .book-list p, .queue-item {
             margin: 5px 0;
+        }
+        .queue {
+            position: relative;
+            max-width: 100%;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .queue h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        .queue-list {
+            list-style: none;
+            padding: 0;
+        }
+        @media(min-width: 768px) {
+            .queue {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                max-width: 300px;
+                text-align: left;
+            }
+            main {
+                margin-right: 340px;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Books</h1>
-    <h2>2024</h2>
-    <div class="book-list">
-        <p>1Q84 - Haruki Murakami</p>
-        <p>Kafka on the Shore - Haruki Murakami</p>
+    <div class="queue">
+        <h2>Reading Queue</h2>
+        <div class="queue-list">
+            <div class="queue-item">How to Become a Straight A Student</div>
+            <div class="queue-item">The Gift - Lewis Hyde</div>
+        </div>
+    </div>
+    <main>
+        <h2>2023</h2>
+        <div class="book-list">
         <p>The Hitchhiker's Guide to the Galaxy - Douglas Adams</p>
         <p>The Restaurant at the End of the Universe - Douglas Adams</p>
+        <p>הדבר היה ככה - Meir Shalev</p>
+        </div>
+        <h2>2024</h2>
+        <div class="book-list">
+        <p>1Q84 - Haruki Murakami</p>
+        <p>Man's Search for Meaning - Viktor E. Frankl</p>
+        <p>Kafka on the Shore - Haruki Murakami</p>
         <p>Everybody Lies: Big Data, New Data, and What the Internet Can Tell Us about Who We Really Are - Seth Stephens-Davidowitz</p>
         <p>The Picture of Dorian Gray - Oscar Wilde</p>
-        <p>Man's Search for Meaning - Viktor E. Frankl</p>
         <p>שתהיי לי הסכין - David Grossman</p>
-        <p>הדבר היה ככה - Meir Shalev</p>
-    </div>
+        </div>
+        <h2>2025</h2>
+        <div class="book-list">
+            <details>
+                <summary>Metamorphosis and Other Stories - Franz Kafka</summary>
+                <ul>
+                 <li>A Message from the Emperor</li>
+                <li>Metamorphosis</li>
+                <li>The Judgment</li>
+                <li>In the Penal Colony</li>
+                <li>A Country Doctor</li>
+                <li>An Old Leaf</li>
+                <li>A Hunger Artist</li>
+                <li>Before the Law</li>
+                </ul>
+            </details>
+        </div>
+    </main>
 </body>
 </html>
